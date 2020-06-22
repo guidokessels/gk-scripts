@@ -1,0 +1,43 @@
+{
+  "name": "gk-scripts",
+  "version": "0.0.0-semantically-released",
+  "description": "Scripts and configurations for my projects",
+  "repository": "https://github.com/guidokessels/gk-scripts",
+  "author": "Guido Kessels <mail@guidokessels.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@spotify/web-scripts": "^7.0.2",
+    "cross-spawn": "^7.0.3"
+  },
+  "bin": {
+    "gk-scripts": "./bin/gk-scripts"
+  },
+  "files": [
+    "bin",
+    "cjs",
+    "config",
+    "esm",
+    "types"
+  ],
+  "engines": {
+    "node": ">=10.18.0"
+  },
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "types",
+  "scripts": {
+    "clean": "rm -rf cjs esm types",
+    "test": "node src test",
+    "lint": "node src lint",
+    "format": "node src format",
+    "build": "node src build",
+    "commit": "node src commit",
+    "release": "node src release"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "node src commitmsg",
+      "pre-commit": "node src precommit"
+    }
+  }
+}
