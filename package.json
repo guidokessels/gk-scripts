@@ -28,7 +28,7 @@
   "types": "types",
   "scripts": {
     "clean": "rm -rf cjs esm types",
-    "test": "node src test",
+    "test": "node src test --passWithNoTests",
     "lint": "node src lint",
     "format": "node src format",
     "build": "node src build",
