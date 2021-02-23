@@ -8,7 +8,7 @@
   "dependencies": {
     "@spotify/web-scripts": "^8.0.0",
     "cross-spawn": "^7.0.3",
-    "husky": "^4.2.5"
+    "husky": "^5.1.1"
   },
   "bin": {
     "gk-scripts": "./bin/gk-scripts"
