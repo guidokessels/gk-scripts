@@ -6,7 +6,7 @@
   "author": "Guido Kessels <mail@guidokessels.com>",
   "license": "MIT",
   "dependencies": {
-    "@spotify/web-scripts": "^8.0.0",
+    "@spotify/web-scripts": "^13.0.0",
     "cross-spawn": "^7.0.3",
     "husky": "^4.2.5"
   },
